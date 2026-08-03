@@ -1,0 +1,17 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# 개발 서버의 Vite proxy와 동일한 역할:
+# /airport-congestion-web/* → https://apis.data.go.kr/*
+[[redirects]]
+  from = "/airport-congestion-web/*"
+  to = "https://apis.data.go.kr/:splat"
+  status = 200
+  force = true
+
+# SPA 라우팅을 위한 fallback (React 앱)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
