@@ -244,7 +244,7 @@ export default function App() {
                         <CartesianGrid strokeDasharray="3 3" stroke="#30363d" vertical={false} />
                         <XAxis dataKey="gate" tick={{ fill: '#8b949e', fontSize: 11 }} tickLine={false} axisLine={false} />
                         <YAxis tick={{ fill: '#8b949e', fontSize: 11 }} tickLine={false} axisLine={false} />
-                        <Tooltip formatter={(v: number) => [`${v.toLocaleString()}명`, '인원']} contentStyle={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 8, color: '#e6edf3' }} cursor={{ fill: 'rgba(88,166,255,0.06)' }} />
+                        <Tooltip formatter={(v) => [`${Number(v ?? 0).toLocaleString()}명`, '인원']} contentStyle={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 8, color: '#e6edf3' }} cursor={{ fill: 'rgba(88,166,255,0.06)' }} />
                         <Bar dataKey="인원" fill={COLORS.t1Entry} radius={[4, 4, 0, 0]} maxBarSize={40} />
                       </BarChart>
                     </ResponsiveContainer>
@@ -258,7 +258,7 @@ export default function App() {
                         <CartesianGrid strokeDasharray="3 3" stroke="#30363d" vertical={false} />
                         <XAxis dataKey="gate" tick={{ fill: '#8b949e', fontSize: 11 }} tickLine={false} axisLine={false} />
                         <YAxis tick={{ fill: '#8b949e', fontSize: 11 }} tickLine={false} axisLine={false} />
-                        <Tooltip formatter={(v: number) => [`${v.toLocaleString()}명`, '인원']} contentStyle={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 8, color: '#e6edf3' }} cursor={{ fill: 'rgba(63,185,80,0.06)' }} />
+                        <Tooltip formatter={(v) => [`${Number(v ?? 0).toLocaleString()}명`, '인원']} contentStyle={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 8, color: '#e6edf3' }} cursor={{ fill: 'rgba(63,185,80,0.06)' }} />
                         <Bar dataKey="인원" fill={COLORS.t1Exit} radius={[4, 4, 0, 0]} maxBarSize={40} />
                       </BarChart>
                     </ResponsiveContainer>
@@ -272,7 +272,7 @@ export default function App() {
                         <CartesianGrid strokeDasharray="3 3" stroke="#30363d" vertical={false} />
                         <XAxis dataKey="gate" tick={{ fill: '#8b949e', fontSize: 11 }} tickLine={false} axisLine={false} />
                         <YAxis tick={{ fill: '#8b949e', fontSize: 11 }} tickLine={false} axisLine={false} />
-                        <Tooltip formatter={(v: number) => [`${v.toLocaleString()}명`, '인원']} contentStyle={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 8, color: '#e6edf3' }} cursor={{ fill: 'rgba(188,140,255,0.06)' }} />
+                        <Tooltip formatter={(v) => [`${Number(v ?? 0).toLocaleString()}명`, '인원']} contentStyle={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 8, color: '#e6edf3' }} cursor={{ fill: 'rgba(188,140,255,0.06)' }} />
                         <Bar dataKey="인원" fill={COLORS.t2Entry} radius={[4, 4, 0, 0]} maxBarSize={60} />
                       </BarChart>
                     </ResponsiveContainer>
@@ -286,7 +286,7 @@ export default function App() {
                         <CartesianGrid strokeDasharray="3 3" stroke="#30363d" vertical={false} />
                         <XAxis dataKey="gate" tick={{ fill: '#8b949e', fontSize: 11 }} tickLine={false} axisLine={false} />
                         <YAxis tick={{ fill: '#8b949e', fontSize: 11 }} tickLine={false} axisLine={false} />
-                        <Tooltip formatter={(v: number) => [`${v.toLocaleString()}명`, '인원']} contentStyle={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 8, color: '#e6edf3' }} cursor={{ fill: 'rgba(249,185,78,0.06)' }} />
+                        <Tooltip formatter={(v) => [`${Number(v ?? 0).toLocaleString()}명`, '인원']} contentStyle={{ background: '#161b22', border: '1px solid #30363d', borderRadius: 8, color: '#e6edf3' }} cursor={{ fill: 'rgba(249,185,78,0.06)' }} />
                         <Bar dataKey="인원" fill={COLORS.t2Exit} radius={[4, 4, 0, 0]} maxBarSize={60} />
                       </BarChart>
                     </ResponsiveContainer>
